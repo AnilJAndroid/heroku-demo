@@ -1,0 +1,2436 @@
+{
+  "type": "ai.msg.domain.workflow.WorkflowMetaDataInfo",
+  "name": "discount.not.applicable",
+  "version": "1.0",
+  "nodes": [
+    {
+      "label": "IS_LOGGED_IN_PROMPT",
+      "name": "IS_LOGGED_IN_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "IS_LOGGED_IN_PROMPT",
+        "name": "IS_LOGGED_IN_PROMPT",
+        "entities": [],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Some promo codes require you to be logged into your account that matches the email address the promo may have been sent to. Are you logged in?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Some promo codes require you to be logged into your account that matches the email address the promo may have been sent to. Are you logged in?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "ITEM_INDICATOR_PROMPT",
+      "name": "ITEM_INDICATOR_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "ITEM_INDICATOR_PROMPT",
+        "name": "ITEM_INDICATOR_PROMPT",
+        "entities": [],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Great, Select the item indicator in the top right-hand corner.  Once selected, on the bottom there is an option of 'Have a coupon code?', Select this option.  Do you now see a spot to type the code?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "no",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Great, Select the item indicator in the top right-hand corner.  Once selected, on the bottom there is an option of 'Have a coupon code?', Select this option.  Do you now see a spot to type the code?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "no",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "PROMO_CODE_PROMPT",
+      "name": "PROMO_CODE_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "PROMO_CODE_PROMPT",
+        "name": "PROMO_CODE_PROMPT",
+        "entities": [
+          {
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "PROMO_CODE",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }
+        ],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "I am sorry I could not help. May you have provide me with the promo code you were looking to use are using.",
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "I am sorry I could not help. May you have provide me with the promo code you were looking to use are using.",
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "ANY_HELP_PROMPT",
+      "name": "ANY_HELP_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "ANY_HELP_PROMPT",
+        "name": "ANY_HELP_PROMPT",
+        "entities": [],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Great, is there anything else I can help you with?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Great, is there anything else I can help you with?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "PROMO_ENTER_PROMPT",
+      "name": "PROMO_ENTER_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "PROMO_ENTER_PROMPT",
+        "name": "PROMO_ENTER_PROMPT",
+        "entities": [],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "The promo code must be typed exactly as provided, including upper and lower case letters. Please re-enter it now. Did this apply it?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "The promo code must be typed exactly as provided, including upper and lower case letters. Please re-enter it now. Did this apply it?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "THANKS_RESPONSE",
+      "name": "THANKS_RESPONSE",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "RESPONSE",
+      "response": {
+        "type": "ai.msg.domain.workflow.StandardActionResponse",
+        "contextResponses": [
+          {
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [
+                {
+                  "isTemplateResponse": true,
+                  "responseUnits": [
+                    {
+                      "bucketId": "DEFAULT",
+                      "attachments": [
+                        {
+                          "type": "ai.msg.domain.responses.core.Text",
+                          "text": "Great, thank you.",
+                          "timestamp": 0
+                        }
+                      ],
+                      "messengerTemplates": []
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isTargetingEnabled": false
+      },
+      "level": "TERMINATE"
+    },
+    {
+      "label": "TROUBLESHOOTING_PROMPT",
+      "name": "TROUBLESHOOTING_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "TROUBLESHOOTING_PROMPT",
+        "name": "TROUBLESHOOTING_PROMPT",
+        "entities": [
+          {
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "REFERENCE",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }
+        ],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "How did you receive the promo code?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Sent via email",
+                                  "description": "Sent via email",
+                                  "metadata": "email",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "Saw on Site",
+                                  "description": "Saw on Site",
+                                  "metadata": "site",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "How did you receive the promo code?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Sent via email",
+                                  "description": "Sent via email",
+                                  "metadata": "email",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "Saw on Site",
+                                  "description": "Saw on Site",
+                                  "metadata": "site",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "INTENT_SWITCH_TO_HUMAN_HANDOFF",
+      "name": "INTENT_SWITCH_TO_HUMAN_HANDOFF",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "INTENT_SWITCH",
+      "response": {
+        "type": "ai.msg.domain.workflow.SwitchIntentMetaData",
+        "targetIntentKey": "human.handoff"
+      },
+      "level": "TERMINATE"
+    },
+    {
+      "label": "START_PROMPT",
+      "name": "START_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "START_PROMPT",
+        "name": "START_PROMPT",
+        "entities": [
+          {
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "USER_OPTIONS",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }
+        ],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "I will walk you through using promo codes",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Troubleshooting Steps",
+                                  "description": "Step by Step Troubleshooting",
+                                  "metadata": "Troubleshooting",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "Quick Steps",
+                                  "description": "Quick Steps",
+                                  "metadata": "Quick Steps",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "I will walk you through using promo codes",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Step by Step Troubleshooting",
+                                  "description": "Step by Step Troubleshooting",
+                                  "metadata": "Troubleshooting",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "Quick Steps",
+                                  "description": "Quick Steps",
+                                  "metadata": "Quick Steps",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "START"
+    },
+    {
+      "label": "ANYTHING_ELSE_PROMPT",
+      "name": "ANYTHING_ELSE_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "ANYTHING_ELSE_PROMPT",
+        "name": "ANYTHING_ELSE_PROMPT",
+        "entities": [],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Great, is there anything else I can help you with?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Great, is there anything else I can help you with?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "WELCOME_PROMPT",
+      "name": "WELCOME_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "WELCOME_PROMPT",
+        "name": "WELCOME_PROMPT",
+        "entities": [],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "We'd be happy to look into this for you. Let's try the following steps:",
+                            "timestamp": 0
+                          },
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "1. Select the item indicator in the top right-hand corner\n2. At the bottom of the screen select 'Have a coupon code?\n3. Enter in the exact promo code\n4. Complete Checkout",
+                            "timestamp": 0
+                          },
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Was this helpful?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "We'd be happy to look into this for you. Let's try the following steps:",
+                            "timestamp": 0
+                          },
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "1. Select the item indicator in the top right-hand corner\n2. At the bottom of the screen select 'Have a coupon code?\n3. Enter in the exact promo code\n4. Complete Checkout",
+                            "timestamp": 0
+                          },
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Was this helpful?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "PROMO_LOGIN_PROMPT",
+      "name": "PROMO_LOGIN_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "PROMO_LOGIN_PROMPT",
+        "name": "PROMO_LOGIN_PROMPT",
+        "entities": [],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Please login and retype the promo code. Did this resolve it?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Please login and retype the promo code. Did this resolve it?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "Yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "No",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "OTP_PROMPT",
+      "name": "OTP_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "OTP_PROMPT",
+        "name": "OTP_PROMPT",
+        "entities": [],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Please login with the email address you were sent the code to.",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Logged in successfully",
+                                  "description": "Logged in successfully",
+                                  "metadata": "yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "Unable to log in",
+                                  "description": "Unable to log in",
+                                  "metadata": "no",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Please login with the email address you were sent the code to.",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Logged in successfully",
+                                  "description": "Logged in successfully",
+                                  "metadata": "yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "Unable to log in",
+                                  "description": "Unable to log in",
+                                  "metadata": "no",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "BASELINE_UNQUALIFY_PROMPT",
+      "name": "BASELINE_UNQUALIFY_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "BASELINE_UNQUALIFY_PROMPT",
+        "name": "BASELINE_UNQUALIFY_PROMPT",
+        "entities": [
+          {
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "PROMO_CODE",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }
+        ],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "The items may not qualify or the promo may be over. Please provide me with the promo code you are using.",
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "The items may not qualify or the promo may be over. Please provide me with the promo code you are using.",
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "VISUAL_PROMPT",
+      "name": "VISUAL_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "VISUAL_PROMPT",
+        "name": "VISUAL_PROMPT",
+        "entities": [],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Let me show you a visual.",
+                            "timestamp": 0
+                          },
+                          {
+                            "type": "ai.msg.domain.responses.core.Carousel",
+                            "timestamp": 0,
+                            "elements": [
+                              {
+                                "title": "Screenshot",
+                                "imageUrl": "https://s3.amazonaws.com/msgai/clients/westjet/carousel_card1_picture.png"
+                              }
+                            ],
+                            "carouselImageAspectRatio": "HORIZONTAL"
+                          },
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Did this help?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "no",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [
+            {
+              "priority": 0,
+              "experimentTargetEnabled": true,
+              "responses": [],
+              "localeResponsesMap": {
+                "default": [
+                  {
+                    "isTemplateResponse": false,
+                    "responseUnits": [
+                      {
+                        "bucketId": "DEFAULT",
+                        "attachments": [
+                          {
+                            "type": "ai.msg.domain.responses.core.Text",
+                            "text": "Let me show you a visual. [Image] Did this help?",
+                            "quickReply": {
+                              "description": "QuickReply",
+                              "type": "text",
+                              "options": [
+                                {
+                                  "label": "Yes",
+                                  "description": "Yes",
+                                  "metadata": "yes",
+                                  "contentType": "text"
+                                },
+                                {
+                                  "label": "No",
+                                  "description": "No",
+                                  "metadata": "no",
+                                  "contentType": "text"
+                                }
+                              ]
+                            },
+                            "timestamp": 0
+                          }
+                        ],
+                        "messengerTemplates": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "INTENT_SWITCH_TO_GREETINGS",
+      "name": "INTENT_SWITCH_TO_GREETINGS",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "INTENT_SWITCH",
+      "response": {
+        "type": "ai.msg.domain.workflow.SwitchIntentMetaData",
+        "targetIntentKey": "msgai.conversational.greetings.welcome"
+      },
+      "level": "TERMINATE"
+    }
+  ],
+  "transitions": [
+    {
+      "sourceNodeId": "START_PROMPT",
+      "targetNodeId": "TROUBLESHOOTING_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USER_OPTIONS_value!=null && USER_OPTIONS_value.equalsIgnoreCase('Troubleshooting')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "USER_OPTIONS",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT",
+      "targetNodeId": "WELCOME_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USER_OPTIONS_value!=null && USER_OPTIONS_value.equalsIgnoreCase('Quick Steps')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "USER_OPTIONS",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "WELCOME_PROMPT",
+      "targetNodeId": "ANY_HELP_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.affirm')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "ANY_HELP_PROMPT",
+      "targetNodeId": "THANKS_RESPONSE",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.decline')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "ANY_HELP_PROMPT",
+      "targetNodeId": "INTENT_SWITCH_TO_GREETINGS",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.affirm')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "WELCOME_PROMPT",
+      "targetNodeId": "IS_LOGGED_IN_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.decline')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "IS_LOGGED_IN_PROMPT",
+      "targetNodeId": "PROMO_ENTER_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.affirm')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "PROMO_ENTER_PROMPT",
+      "targetNodeId": "ANYTHING_ELSE_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.affirm')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "ANYTHING_ELSE_PROMPT",
+      "targetNodeId": "INTENT_SWITCH_TO_GREETINGS",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.affirm')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "ANYTHING_ELSE_PROMPT",
+      "targetNodeId": "THANKS_RESPONSE",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.decline')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "PROMO_ENTER_PROMPT",
+      "targetNodeId": "BASELINE_UNQUALIFY_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.decline')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "BASELINE_UNQUALIFY_PROMPT",
+      "targetNodeId": "INTENT_SWITCH_TO_HUMAN_HANDOFF",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "PROMO_CODE_value!=null",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "PROMO_CODE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "IS_LOGGED_IN_PROMPT",
+      "targetNodeId": "PROMO_LOGIN_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.decline')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "PROMO_LOGIN_PROMPT",
+      "targetNodeId": "ANYTHING_ELSE_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.affirm')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "PROMO_LOGIN_PROMPT",
+      "targetNodeId": "PROMO_ENTER_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.decline')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "TROUBLESHOOTING_PROMPT",
+      "targetNodeId": "OTP_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "REFERENCE_value!=null && REFERENCE_value.equalsIgnoreCase('email')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "REFERENCE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "OTP_PROMPT",
+      "targetNodeId": "ITEM_INDICATOR_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.affirm')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "TROUBLESHOOTING_PROMPT",
+      "targetNodeId": "ITEM_INDICATOR_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "REFERENCE_value!=null && REFERENCE_value.equalsIgnoreCase('site')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "REFERENCE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "OTP_PROMPT",
+      "targetNodeId": "PROMO_CODE_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.decline')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "ITEM_INDICATOR_PROMPT",
+      "targetNodeId": "PROMO_ENTER_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.affirm')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "ITEM_INDICATOR_PROMPT",
+      "targetNodeId": "VISUAL_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.decline')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "VISUAL_PROMPT",
+      "targetNodeId": "PROMO_ENTER_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.affirm')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "VISUAL_PROMPT",
+      "targetNodeId": "PROMO_CODE_PROMPT",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "INTENT_TYPE_value!=null && INTENT_TYPE_value.equalsIgnoreCase('msgai.conversational.decline')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "INTENT_TYPE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "PROMO_CODE_PROMPT",
+      "targetNodeId": "INTENT_SWITCH_TO_HUMAN_HANDOFF",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "PROMO_CODE_value != null",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [
+            {
+              "derivedEntity": false,
+              "dsEntity": false,
+              "translationEnabled": true,
+              "name": "PROMO_CODE",
+              "startIndex": 0,
+              "endIndex": 0,
+              "synonyms": [],
+              "formattedValues": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "flowEntityMap": {
+    "INTENT_TYPE": {
+      "id": "INTENT_TYPE",
+      "botId": "d5ec836a-3e18-4d95-b854-ed3609b6be60",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "INTENT_TYPE",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "msgai.en.intent.type",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [
+        {
+          "type": "Text",
+          "name": "value",
+          "scope": "SESSION"
+        }
+      ],
+      "label": "INTENT_TYPE",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "INTENT_TYPE"
+    },
+    "VISITOR_ORIGIN": {
+      "id": "VISITOR_ORIGIN",
+      "botId": "d5ec836a-3e18-4d95-b854-ed3609b6be60",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "VISITOR_ORIGIN",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "VISITOR_ORIGIN",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [
+        {
+          "type": "Text",
+          "name": "value",
+          "scope": "SESSION"
+        },
+        {
+          "type": "Text",
+          "name": "channel",
+          "scope": "SESSION"
+        }
+      ],
+      "label": "VISITOR_ORIGIN",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "VISITOR_ORIGIN"
+    },
+    "PROMO_CODE": {
+      "id": "PROMO_CODE",
+      "botId": "d5ec836a-3e18-4d95-b854-ed3609b6be60",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "PROMO_CODE",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "PROMO_CODE",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [
+        {
+          "type": "Text",
+          "name": "value",
+          "scope": "SESSION"
+        }
+      ],
+      "label": "PROMO_CODE",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "PROMO_CODE"
+    },
+    "USER_NAME": {
+      "id": "USER_NAME",
+      "botId": "d5ec836a-3e18-4d95-b854-ed3609b6be60",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "USER_NAME",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "USER_NAME",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [
+        {
+          "type": "Text",
+          "name": "value",
+          "scope": "SESSION"
+        }
+      ],
+      "label": "USER_NAME",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "USER_NAME"
+    },
+    "EMAIL_ID": {
+      "id": "EMAIL_ID",
+      "botId": "d5ec836a-3e18-4d95-b854-ed3609b6be60",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "EMAIL_ID",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "msgai.en.email",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [
+        {
+          "type": "Text",
+          "name": "value",
+          "scope": "SESSION"
+        }
+      ],
+      "label": "EMAIL_ID",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "EMAIL_ID"
+    },
+    "USER_OPTIONS": {
+      "id": "USER_OPTIONS",
+      "botId": "d5ec836a-3e18-4d95-b854-ed3609b6be60",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "USER_OPTIONS",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "USER_OPTIONS",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [
+        {
+          "type": "Text",
+          "name": "value",
+          "scope": "SESSION"
+        }
+      ],
+      "label": "USER_OPTIONS",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "USER_OPTIONS"
+    },
+    "REFERENCE": {
+      "id": "REFERENCE",
+      "botId": "d5ec836a-3e18-4d95-b854-ed3609b6be60",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "REFERENCE",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "REFERENCE",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [
+        {
+          "type": "Text",
+          "name": "value",
+          "scope": "SESSION"
+        }
+      ],
+      "label": "REFERENCE",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "REFERENCE"
+    }
+  }
+}

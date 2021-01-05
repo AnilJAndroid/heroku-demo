@@ -1,0 +1,1368 @@
+{
+  "type": "ai.msg.domain.workflow.WorkflowMetaDataInfo",
+  "name": "return.status",
+  "version": "1.0",
+  "nodes": [{
+      "label": "START_PROMPT",
+      "name": "START_PROMPT",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "START_PROMPT",
+        "name": "START_PROMPT",
+        "entities": [{
+          "derivedEntity": false,
+          "dsEntity": false,
+          "translationEnabled": true,
+          "name": "USER_OPTIONS",
+          "startIndex": 0,
+          "endIndex": 0,
+          "synonyms": [],
+          "formattedValues": []
+        }],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "How can I help you best?",
+                    "quickReply": {
+                      "description": "QuickReply",
+                      "type": "text",
+                      "options": [{
+                          "label": "Where's my refund?",
+                          "description": "Where's my refund?",
+                          "metadata": "11",
+                          "contentType": "text"
+                        },
+                        {
+                          "label": "Return Policy",
+                          "description": "Return Policy",
+                          "metadata": "22",
+                          "contentType": "text"
+                        },
+                        {
+                          "label": "Request a Waybill",
+                          "description": "Request a Waybill",
+                          "metadata": "33",
+                          "contentType": "text"
+                        }
+                      ]
+                    },
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "How can I help you best?",
+                    "quickReply": {
+                      "description": "QuickReply",
+                      "type": "text",
+                      "options": [{
+                          "label": "Where's my refund?",
+                          "description": "Where's my refund?",
+                          "metadata": "11",
+                          "contentType": "text"
+                        },
+                        {
+                          "label": "Return Policy",
+                          "description": "Return Policy",
+                          "metadata": "22",
+                          "contentType": "text"
+                        },
+                        {
+                          "label": "Request a Waybill",
+                          "description": "Request a Waybill",
+                          "metadata": "33",
+                          "contentType": "text"
+                        }
+                      ]
+                    },
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "START"
+    },
+    {
+      "label": "START_PROMPT11",
+      "name": "START_PROMPT11",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "START_PROMPT",
+        "name": "START_PROMPT",
+        "entities": [{
+          "derivedEntity": false,
+          "dsEntity": false,
+          "translationEnabled": true,
+          "name": "USER_OPTIONS",
+          "startIndex": 0,
+          "endIndex": 0,
+          "synonyms": [],
+          "formattedValues": []
+        }],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                      "type": "ai.msg.domain.responses.core.Text",
+                      "text": "Once we receive the item back it can take 5 - 7 days for theorder to be processed. Once the order is processed you willreceive an email confirming the return.Refunds will be done to the same method of payment youoriginally used. It could take 3-5 days for credit card refunds toshow up on your account depending on the individual banks.Based on the time frame and location that you sent your itemfrom it could take 2-3 weeks for the entire process to be completed",
+                      "timestamp": 0
+                    },
+                    {
+                      "type": "ai.msg.domain.responses.core.Text",
+                      "text": "Does your order fall within this time frame?",
+                      "quickReply": {
+                        "description": "QuickReply",
+                        "type": "text",
+                        "options": [{
+                            "label": "Yes",
+                            "description": "yes",
+                            "metadata": "111",
+                            "contentType": "text"
+                          },
+                          {
+                            "label": "No",
+                            "description": "no",
+                            "metadata": "222",
+                            "contentType": "text"
+                          }
+                        ]
+                      },
+                      "timestamp": 0
+                    }
+                  ],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                      "type": "ai.msg.domain.responses.core.Text",
+                      "text": "Once we receive the item back it can take 5 - 7 days for theorder to be processed. Once the order is processed you willreceive an email confirming the return.Refunds will be done to the same method of payment youoriginally used. It could take 3-5 days for credit card refunds toshow up on your account depending on the individual banks.Based on the time frame and location that you sent your itemfrom it could take 2-3 weeks for the entire process to be completed",
+                      "timestamp": 0
+                    },
+                    {
+                      "type": "ai.msg.domain.responses.core.Text",
+                      "text": "Does your order fall within this time frame?",
+                      "quickReply": {
+                        "description": "QuickReply",
+                        "type": "text",
+                        "options": [{
+                            "label": "Yes",
+                            "description": "yes",
+                            "metadata": "111",
+                            "contentType": "text"
+                          },
+                          {
+                            "label": "No",
+                            "description": "no",
+                            "metadata": "222",
+                            "contentType": "text"
+                          }
+                        ]
+                      },
+                      "timestamp": 0
+                    }
+                  ],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "START_PROMPT111",
+      "name": "START_PROMPT111",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "START_PROMPT",
+        "name": "START_PROMPT",
+        "entities": [{
+          "derivedEntity": false,
+          "dsEntity": false,
+          "translationEnabled": true,
+          "name": "USER_OPTIONS",
+          "startIndex": 0,
+          "endIndex": 0,
+          "synonyms": [],
+          "formattedValues": []
+        }],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Please allow us a little longer for the processes to be completed.Was this helpful?",
+                    "quickReply": {
+                      "description": "QuickReply",
+                      "type": "text",
+                      "options": [{
+                          "label": "Yes",
+                          "description": "yes",
+                          "metadata": "1111",
+                          "contentType": "text"
+                        },
+                        {
+                          "label": "No",
+                          "description": "no",
+                          "metadata": "2222",
+                          "contentType": "text"
+                        }
+                      ]
+                    },
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Please allow us a little longer for the processes to be completed.Was this helpful?",
+                    "quickReply": {
+                      "description": "QuickReply",
+                      "type": "text",
+                      "options": [{
+                          "label": "Yes",
+                          "description": "yes",
+                          "metadata": "1111",
+                          "contentType": "text"
+                        },
+                        {
+                          "label": "No",
+                          "description": "no",
+                          "metadata": "2222",
+                          "contentType": "text"
+                        }
+                      ]
+                    },
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "START_PROMPT1111",
+      "name": "START_PROMPT1111",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "START_PROMPT",
+        "name": "START_PROMPT",
+        "entities": [{
+          "derivedEntity": false,
+          "dsEntity": false,
+          "translationEnabled": true,
+          "name": "USER_OPTIONS",
+          "startIndex": 0,
+          "endIndex": 0,
+          "synonyms": [],
+          "formattedValues": []
+        }],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Great, is there anything else I can help you with",
+                    "quickReply": {
+                      "description": "QuickReply",
+                      "type": "text",
+                      "options": [{
+                          "label": "Yes",
+                          "description": "yes",
+                          "metadata": "11111",
+                          "contentType": "text"
+                        },
+                        {
+                          "label": "No",
+                          "description": "no",
+                          "metadata": "22222",
+                          "contentType": "text"
+                        }
+                      ]
+                    },
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Great, is there anything else I can help you with",
+                    "quickReply": {
+                      "description": "QuickReply",
+                      "type": "text",
+                      "options": [{
+                          "label": "Yes",
+                          "description": "yes",
+                          "metadata": "11111",
+                          "contentType": "text"
+                        },
+                        {
+                          "label": "No",
+                          "description": "no",
+                          "metadata": "22222",
+                          "contentType": "text"
+                        }
+                      ]
+                    },
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "START_PROMPT11111",
+      "name": "START_PROMPT11111",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "START_PROMPT",
+        "name": "START_PROMPT",
+        "entities": [{
+          "derivedEntity": false,
+          "dsEntity": false,
+          "translationEnabled": true,
+          "name": "USER_OPTIONS",
+          "startIndex": 0,
+          "endIndex": 0,
+          "synonyms": [],
+          "formattedValues": []
+        }],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Please scroll through the menu to pick a topic, or type a short,direct question. e.g. “track an order",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Great,thanks",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+    {
+      "label": "START_PROMPT22222",
+      "name": "START_PROMPT22222",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "START_PROMPT",
+        "name": "START_PROMPT",
+        "entities": [{
+          "derivedEntity": false,
+          "dsEntity": false,
+          "translationEnabled": true,
+          "name": "USER_OPTIONS",
+          "startIndex": 0,
+          "endIndex": 0,
+          "synonyms": [],
+          "formattedValues": []
+        }],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Greate Thanks!",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Great,thanks",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+
+    {
+      "label": "INTENT_SWITCH_TO_RETURN_POLICY",
+      "name": "INTENT_SWITCH_TO_RETURN_POLICY",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "INTENT_SWITCH",
+      "response": {
+        "type": "ai.msg.domain.workflow.SwitchIntentMetaData",
+        "targetIntentKey": "return.policy"
+      },
+      "level": "INTERMEDIATE"
+    }, {
+      "label": "START_PROMPT555",
+      "name": "START_PROMPT555",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "START_PROMPT",
+        "name": "START_PROMPT",
+        "entities": [{
+          "derivedEntity": false,
+          "dsEntity": false,
+          "translationEnabled": true,
+          "name": "ORDER_NUMBER",
+          "startIndex": 0,
+          "endIndex": 0,
+          "synonyms": [],
+          "formattedValues": []
+        }],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Please provide your order number",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Please provide your order number",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+
+    {
+      "label": "START_PROMPT5555",
+      "name": "START_PROMPT5555",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "START_PROMPT",
+        "name": "START_PROMPT5555",
+        "entities": [{
+          "derivedEntity": false,
+          "dsEntity": false,
+          "translationEnabled": true,
+          "name": "ORDER_ITEMS",
+          "startIndex": 0,
+          "endIndex": 0,
+          "synonyms": [],
+          "formattedValues": []
+        }],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "What item are you looking to return?",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "What item are you looking to return?",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+
+    {
+      "label": "START_PROMPT55555",
+      "name": "START_PROMPT55555",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "START_PROMPT",
+        "name": "USERNAME",
+        "entities": [{
+          "derivedEntity": false,
+          "dsEntity": false,
+          "translationEnabled": true,
+          "name": "USERNAME",
+          "startIndex": 0,
+          "endIndex": 0,
+          "synonyms": [],
+          "formattedValues": []
+        }],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Please provide your name. Or type 'skip' if you do not wish to provide this information.",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Please provide your name. Or type 'skip' if you do not wish to provide this information.",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    },
+
+    {
+      "label": "START_PROMPT555555",
+      "name": "START_PROMPT555555",
+      "workflowNodeType": "NORMAL",
+      "workflowActionType": "PROMPT",
+      "response": {
+        "type": "ai.msg.domain.workflow.Prompt",
+        "label": "START_PROMPT",
+        "name": "EMAIL_ID",
+        "entities": [{
+          "derivedEntity": false,
+          "dsEntity": false,
+          "translationEnabled": true,
+          "name": "EMAIL_ID",
+          "startIndex": 0,
+          "endIndex": 0,
+          "synonyms": [],
+          "formattedValues": []
+        }],
+        "scope": "BOT",
+        "version": 1,
+        "maxAttempt": 3,
+        "response": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Please provide your email address?",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "retryAction": {
+          "type": "ai.msg.domain.workflow.StandardActionResponse",
+          "contextResponses": [{
+            "priority": 0,
+            "experimentTargetEnabled": true,
+            "responses": [],
+            "localeResponsesMap": {
+              "default": [{
+                "isTemplateResponse": false,
+                "responseUnits": [{
+                  "bucketId": "DEFAULT",
+                  "attachments": [{
+                    "type": "ai.msg.domain.responses.core.Text",
+                    "text": "Please provide your email address?",
+                    "timestamp": 0
+                  }],
+                  "messengerTemplates": []
+                }]
+              }]
+            }
+          }],
+          "isTargetingEnabled": false
+        },
+        "scopeDurability": "SESSION",
+        "totalRetry": 1
+      },
+      "level": "INTERMEDIATE"
+    }
+  ],
+  "transitions": [{
+      "sourceNodeId": "START_PROMPT",
+      "targetNodeId": "START_PROMPT11",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USER_OPTIONS_value!=null && USER_OPTIONS_value.equalsIgnoreCase('11')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "USER_OPTIONS",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT11",
+      "targetNodeId": "START_PROMPT111",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USER_OPTIONS_value!=null && USER_OPTIONS_value.equalsIgnoreCase('111')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "USER_OPTIONS",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT11",
+      "targetNodeId": "START_PROMPT555",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USER_OPTIONS_value!=null && USER_OPTIONS_value.equalsIgnoreCase('222')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "USER_OPTIONS",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT111",
+      "targetNodeId": "START_PROMPT1111",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USER_OPTIONS_value!=null && USER_OPTIONS_value.equalsIgnoreCase('1111')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "USER_OPTIONS",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT111",
+      "targetNodeId": "START_PROMPT555",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USER_OPTIONS_value!=null && USER_OPTIONS_value.equalsIgnoreCase('2222')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "USER_OPTIONS",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT1111",
+      "targetNodeId": "START_PROMPT11111",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USER_OPTIONS_value!=null && USER_OPTIONS_value.equalsIgnoreCase('11111')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "USER_OPTIONS",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT1111",
+      "targetNodeId": "START_PROMPT22222",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USER_OPTIONS_value!=null && USER_OPTIONS_value.equalsIgnoreCase('22222')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "USER_OPTIONS",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT",
+      "targetNodeId": "INTENT_SWITCH_TO_RETURN_POLICY",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USER_OPTIONS_value!=null && USER_OPTIONS_value.equalsIgnoreCase('22')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "USER_OPTIONS",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT",
+      "targetNodeId": "START_PROMPT555",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USER_OPTIONS_value!=null && USER_OPTIONS_value.equalsIgnoreCase('33')",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "USER_OPTIONS",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT555",
+      "targetNodeId": "START_PROMPT5555",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "ORDER_NUMBER_value!=null",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "ORDER_NUMBER",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT5555",
+      "targetNodeId": "START_PROMPT55555",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "ORDER_ITEMS_value!=null",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "ORDER_ITEMS",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT55555",
+      "targetNodeId": "START_PROMPT555555",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "USERNAME_value!=null",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "USERNAME",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    },
+    {
+      "sourceNodeId": "START_PROMPT55555",
+      "targetNodeId": "START_PROMPT555555",
+      "guardMetaData": {
+        "guardName": "ORIGIN_MENU_RESPONSE",
+        "priority": 5,
+        "guardType": "RULE_EXPRESSION",
+        "rule": {
+          "expression": "EMAIL_ID_value!=null",
+          "groupId": null,
+          "isDefault": false,
+          "ruleExpressionAttributesList": null,
+          "expectedAttributes": [{
+            "derivedEntity": false,
+            "dsEntity": false,
+            "translationEnabled": true,
+            "name": "EMAIL_ID",
+            "startIndex": 0,
+            "endIndex": 0,
+            "synonyms": [],
+            "formattedValues": []
+          }]
+        }
+      }
+    }
+  ],
+  "flowEntityMap": {
+    "ORDER_NUMBER": {
+      "id": "ORDER_NUMBER",
+      "botId": "7cf8101c-fd42-4196-98e1-2fe0a4b2edae",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "ORDER_NUMBER",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "ORDER_NUMBER",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [{
+        "type": "Text",
+        "name": "value",
+        "scope": "SESSION"
+      }],
+      "label": "ORDER_NUMBER",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "ORDER_NUMBER"
+    },
+    "ORDER_ITEMS": {
+      "id": "ORDER_ITEMS",
+      "botId": "7cf8101c-fd42-4196-98e1-2fe0a4b2edae",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "ORDER_ITEMS",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "ORDER_ITEMS",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [{
+        "type": "Text",
+        "name": "value",
+        "scope": "SESSION"
+      }],
+      "label": "ORDER_ITEMS",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "ORDER_ITEMS"
+    },
+    "EMAIL_ID": {
+      "id": "EMAIL_ID",
+      "botId": "7cf8101c-fd42-4196-98e1-2fe0a4b2edae",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "EMAIL_ID",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "msgai.en.email",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [{
+        "type": "Text",
+        "name": "value",
+        "scope": "SESSION"
+      }],
+      "label": "EMAIL_ID",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "EMAIL_ID"
+    },
+    "USER_OPTIONS": {
+      "id": "USER_OPTIONS",
+      "botId": "7cf8101c-fd42-4196-98e1-2fe0a4b2edae",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "USER_OPTIONS",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "USER_OPTIONS",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [{
+        "type": "Text",
+        "name": "value",
+        "scope": "SESSION"
+      }],
+      "label": "USER_OPTIONS",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "USER_OPTIONS"
+    },
+    "USERNAME": {
+      "id": "USERNAME",
+      "botId": "7cf8101c-fd42-4196-98e1-2fe0a4b2edae",
+      "derivedEntity": false,
+      "env": "SANDBOX",
+      "dsEntity": false,
+      "translationEnabled": true,
+      "type": "COMPLEX_OBJECT",
+      "version": "1",
+      "name": "USERNAME",
+      "startIndex": 0,
+      "endIndex": 0,
+      "className": "USERNAME",
+      "value": "",
+      "synonyms": [],
+      "formattedValues": [{
+        "type": "Text",
+        "name": "value",
+        "scope": "SESSION"
+      }],
+      "label": "USERNAME",
+      "scope": "BOTH",
+      "channel": "ZENDESK_CHAT",
+      "category": "ENTITY",
+      "description": "USERNAME"
+    }
+  }
+}
